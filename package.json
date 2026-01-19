@@ -1,0 +1,12 @@
+{
+  "name": "pulseops-platform",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"yarn workspace frontend dev\" \"yarn workspace backend dev\""
+  }
+}
