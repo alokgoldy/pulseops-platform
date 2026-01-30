@@ -32,3 +32,7 @@ function* loginWorker(
 export default function* authSaga() {
   yield takeLatest(loginRequest.type, loginWorker);
 }
+// This saga listens for login requests and handles the login flow
+export default function* authSaga() {
+  yield takeLatest(loginRequest.type, loginWorker);
+}
